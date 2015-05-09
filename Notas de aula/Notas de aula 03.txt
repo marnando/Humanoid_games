@@ -1,0 +1,2 @@
+paralax - objeto fica parado e os objetos que se mexem
+prefab - objeto que i=fica sendo criado de acordo com a movimentação da tela

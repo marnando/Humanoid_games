@@ -1,0 +1,2 @@
+Moto g2 1280x720 -> aspect ratio adapta o game para resoluções menores
+

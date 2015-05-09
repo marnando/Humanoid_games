@@ -1,0 +1,21 @@
+wifi: hgo2013a
+
+documentários:
+indie game development
+
+
+Cominudade:
+game development
+
+
+Banco rendimento:
+Para transações a custo baixo, cerca de $20
+
+
+Movimentação paralax, aplicado em jogos 2D, estilo flappy bird
+
+Física:
+Olhar a documentação do Box2D, tem a explicação do que são os componentes de Phisic2d, conceitos originais
+
+À estudar
+Kinematic
