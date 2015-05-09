@@ -33,6 +33,7 @@ public class ScrollingScript : MonoBehaviour {
 		moveParallax ();
 	}
 
+	// realiza o movimento dos ambientes: background e etc
 	private void moveParallax() {
 		Vector3 movement = new Vector3 (speed.x * direction.x, speed.y * direction.y, 0f);
 

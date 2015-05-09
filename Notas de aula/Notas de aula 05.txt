@@ -2,4 +2,8 @@
 
 libgdx - api para desenvolvimento de games
 
+http://github.com/marnando/Humanoid_games.git
 
+
+-- Nuvem
+Oracle Application Express
