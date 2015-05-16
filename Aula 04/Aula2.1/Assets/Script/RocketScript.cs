@@ -16,10 +16,10 @@ public class RocketScript : MonoBehaviour {
 	}
 
 	void tratarTiro() {
-		bool tiro = Input.GetButtonDown ("Fire1");
-		tiro |= Input.GetButtonDown ("Fire2");
+		//bool tiro = Input.GetButtonDown ("Fire1");
+		//tiro |= Input.GetButtonDown ("Fire2");
 
-		if (tiro) {
+		if (ControllerScript.isFire) {
 
 			ArmaScript arma = GetComponent<ArmaScript>();
 
@@ -28,5 +28,11 @@ public class RocketScript : MonoBehaviour {
 				arma.atacar(false);
 			}
 		}
+	}
+
+	void OnCollisionEnter2D(Collision2D outro) {
+		Destroy (gameObject);
+		Destroy (outro.gameObject); //Se o 'outro' for um item por exemplo deve ser tratado diferente
+		ManageGameScript.IS_GAME_OVER = true;
 	}
 }

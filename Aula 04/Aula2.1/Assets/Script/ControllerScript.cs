@@ -13,6 +13,8 @@ public class ControllerScript : MonoBehaviour {
 	//Movement flags
 	public bool moveRight, moveLeft, moveUp, moveDown = false;
 
+	public static bool isFire = false;
+
 	void Awake() {
 		//Capturando o Script RocketScript
 		rock = playerTransform.gameObject.GetComponent<RocketScript>();
@@ -86,6 +88,14 @@ public class ControllerScript : MonoBehaviour {
 		moveRight = true;
 	}
 
+	public void Fire() {
+		isFire = true;
+	}
+
+	public void StopFire() {
+		isFire = false;
+	}
+	
 	public void removeMovement() {
 		moveUp = false;
 		moveDown = false;

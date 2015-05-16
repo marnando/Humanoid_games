@@ -21,9 +21,10 @@ public class BalaScript : MonoBehaviour {
 	void OnTriggerEnter2D(Collider2D other) {
 		Destroy (other.gameObject);
 		Destroy (gameObject);
+        ManageGameScript.SCORE_COUNT = ManageGameScript.SCORE_COUNT + 1;
 	}
 
-	/*
+    /*
 	public bool isEnemyShot {
 		get {
 			return isEnemyShot;

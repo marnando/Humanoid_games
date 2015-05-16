@@ -51,6 +51,7 @@
      <Compile Include="Assets\Script\ControllerScript.cs" />
      <Compile Include="Assets\Script\InimigoScript.cs" />
      <Compile Include="Assets\Script\LogoScript.cs" />
+     <Compile Include="Assets\Script\ManageGameScript.cs" />
      <Compile Include="Assets\Script\MovimentScript.cs" />
      <Compile Include="Assets\Script\RocketScript.cs" />
      <Compile Include="Assets\Script\SceneManagerScript.cs" />
