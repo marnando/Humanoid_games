@@ -33,11 +33,16 @@ public class RocketScript : MonoBehaviour {
 		}
 	}
 
-	void OnCollisionEnter2D(Collision2D outro) {
-        animation.SetBool("explode", true);
+	void OnCollisionEnter2D(Collision2D coll) {
+        //animation.SetBool("explode", true);
         //yield return new WaitForSeconds(delayTime);
-		Destroy (gameObject);
-		Destroy (outro.gameObject); //Se o 'outro' for um item por exemplo deve ser tratado diferente
-		ManageGameScript.IS_GAME_OVER = true;
+		
+		if (coll.gameObject.tag != "Barra_up" 
+		||  coll.gameObject.tag != "Barra_down")
+		{
+			Destroy (gameObject);
+			Destroy (coll.gameObject); //Se o 'outro' for um item por exemplo deve ser tratado diferente
+			ManageGameScript.IS_GAME_OVER = true;
+		}
 	}
 }
